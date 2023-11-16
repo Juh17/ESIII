@@ -1,0 +1,37 @@
+
+1. Por que o uso do nome próprio Liskov?
+
+ R = O uso do nome próprio Liskov se dá em razão da precursora desse princípio, Barbara Liskov, 
+ uma cientista da computação americana, responsável pela introdução de tipos de dados abstratos 
+ e o princípio de abstração de dados que os acompanha , juntamente com o 
+ princípio de substituição de Liskov , que aplica essas idéias à 
+ programação orientada a objetos , subtipagem e herança.
+
+
+2. Qual a principal imagem relacionada ao princípio e qual a explicação sobre ela? 
+  
+  R = A principal imagem associada ao tópico é a do "quadrado-retângulo". Dessa forma, 
+  ela simboliza a hierarquia de classes, permitindo que um programa que utilize uma 
+  classe base do tipo "retângulo" seja facilmente substituído por uma de suas classes 
+  derivadas, como o "quadrado". Isso assegura a integridade do programa.
+
+3. Cite um exemplo onde a herança pode ser usada de forma conveniente, porém deixa uma 
+impressão de que está sendo mal aplicada.
+
+   R = Um exemplo que ilustra uma possível má aplicação da herança é o uso de uma hierarquia
+   de classes como "Funcionário" e "Gerente". Se a herança for aplicada de forma inadequada, 
+   com a classe "Gerente" sendo uma subclasse de "Funcionário", isso pode levar a uma modelagem 
+   incorreta. A herança, nesse caso, pode levar a uma hierarquia confusa e inflexível, 
+   tornando desafiador estender ou modificar, futuramente, o sistema o qual ambas estão sendo utilizadas.
+
+
+4. Cite um exemplo onde a herança pode ser usada de forma conveniente, 
+porém deixa futuras expansões comprometidas ou com problemas de design.
+
+  R = Um exemplo ilustrativo ocorre em um sistema de modelagem de veículos,
+   onde a herança é utilizada para representar que carros e motos são categorias 
+   específicas de veículos. Contudo, ao contemplar a adição de novos tipos de veículos, 
+   como barcos ou aviões, no futuro, a hierarquia pode se tornar complexa e demandar a 
+   criação de métodos genéricos na classe "Veiculo". Esses métodos genéricos podem não 
+   ser adequados para todas as subclasses, resultando em uma estrutura menos flexível
+   e mais propensa a problemas de design ao expandir o sistema.
