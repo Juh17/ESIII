@@ -38,7 +38,10 @@ porém deixa futuras expansões comprometidas ou com problemas de design.
 
 5. Nos exemplos que você citou, a composição seria mais aplicável? Refaça-os.
 
-   R = Em relação ao exemplo funcionário-gerente, a abordagem com composição seria mais flexível, 
-   pois não limita a estrutura de classes, facilitando a incorporação de novos tipos de funcionários no futuro. 
-   Já sobre a classe Veículo,uma abordagem mais flexível, como o uso de composição ou interfaces, 
-   permitiria uma evolução mais independente e adaptável dos diferentes tipos de veículos.
+   R = Em relação ao exemplo funcionário-gerente, no exemplo com herança, a classe "Gerente" herda da 
+       classe "Funcionario", o que pode tornar rígida e limitar as futuras expansões do sistema.Já no exemplo com composição,
+       a classe "Gerente" contém uma instância da classe "Funcionario" como um atributo. A abordagem com composição é mais flexível, 
+       pois não limita a estrutura de classes, facilitando a incorporação de novos tipos de funcionários no futuro. O mesmo meio 
+       (composição) também pode ser adotado em relação ao exemplo do sistema de modelagem de veículos, permitindo, assim,
+       que diferentes tipos de veículos possam evoluir de forma independente sem a necessidade de mudar drasticamente a hierarquia 
+       existente. 
