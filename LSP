@@ -35,3 +35,10 @@ porém deixa futuras expansões comprometidas ou com problemas de design.
    criação de métodos genéricos na classe "Veiculo". Esses métodos genéricos podem não 
    ser adequados para todas as subclasses, resultando em uma estrutura menos flexível
    e mais propensa a problemas de design ao expandir o sistema.
+
+5. Nos exemplos que você citou, a composição seria mais aplicável? Refaça-os.
+
+   R = Em relação ao exemplo funcionário-gerente, a abordagem com composição seria mais flexível, 
+   pois não limita a estrutura de classes, facilitando a incorporação de novos tipos de funcionários no futuro. 
+   Já sobre a classe Veículo,uma abordagem mais flexível, como o uso de composição ou interfaces, 
+   permitiria uma evolução mais independente e adaptável dos diferentes tipos de veículos.
