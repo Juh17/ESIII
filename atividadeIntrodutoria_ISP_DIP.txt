@@ -1,0 +1,92 @@
+
+ ** Interface Segregation Principle (ISP)
+
+1 - Qual a principal imagem relacionada ao princípio e qual a explicação sobre ela?
+
+  R = O Princípio da Segregação de Interfaces (ISP) estabelece que uma classe não deve 
+  implementar interfaces das quais ela não faz uso. Logo, a imagem associada 
+  ao ISP frequentemente enfatiza a ideia de fragmentar interfaces grandes e genéricas em 
+  interfaces menores e específicas. 
+  
+2 - Por que devemos segregar implementações através do uso de interfaces?
+
+  R = Ao adotar o ISP, a comunicação entre a classe e suas dependências ocorre por meio de interfaces
+  especializadas, o que minimiza as dependências de membros não utilizados e diminui o acoplamento.
+  Interfaces mais concisas tornam a implementação mais simples, elevando a flexibilidade e facilitando 
+  a refatoração e a reutilização. Com menos classes compartilhando interfaces, a quantidade de modificações 
+  necessárias em resposta a uma alteração na interface é reduzida, resultando em uma aplicação mais robusta.
+  
+3 - Podemos dizer que esse princípio é correlato ao Single Responsability Principle pelo fato de que 
+classes e interfaces devem ter um único “foco” (SRP) e que as interfaces com métodos não correlatos 
+devem ser segregadas (ISP)?
+
+  R = Sim, podemos, pois assim como o SRP diz que uma classe deve fazer apenas uma coisa, o ISP diz 
+  que as interfaces (como um conjunto de regras para as classes) devem ser usadas apenas se todas as
+  regras forem úteis para a classe. Se algumas regras não são necessárias, é melhor criar uma nova 
+  lista de regras (ou interface) que seja específica para aquilo que a classe realmente precisa fazer. 
+  Dessa forma, as classes só têm que seguir as regras que fazem sentido para elas.
+
+4 - Comente as seguintes frases à luz do ISP:
+
+a. “Nenhum cliente deve ser forçado a depender de métodos que ele não
+usa”;
+   
+   R = Podemos concluir que os usuários, representados pelas classes, não devem ser obrigados
+   a seguir regras (interfaces) que incluam métodos que não são realmente necessários para as funções da classe.
+
+b. “Classes não devem ser forçadas a implementar interfaces que não usam”;
+
+  R = Podemos concluir por meio dessa afirmação que as interfaces devem ser criadas de maneira a corresponder 
+   exatamente às necessidades das classes que as adotam, evitando impor métodos que não têm relevância 
+   para as mesmas.
+   
+
+ ** Dependency Invertion Principle (DIP)
+   
+5 - Qual a principal imagem relacionada ao princípio e qual a explicação sobre ela?
+
+  R = Não existe uma imagem específica atrelada à esse princípio, porém podemos tomar por 
+  exemplo uma pirâmide invertida: normalmente, as classes de nível superior são representadas na parte superior da pirâmide, 
+  e as classes de nível inferior dependem delas. Contudo, ao aplicar o DIP, essa dependência é invertida, 
+  resultando em uma estrutura mais sólida. O Princípio da Inversão de Dependência (DIP) visa estimular a 
+  inversão de dependência, onde os módulos de nível superior não dependem diretamente dos módulos de nível 
+  inferior, mas ambos dependem de abstrações.
+  
+6 - O que você entende por programar para Interfaces?
+
+  R = Significa que programar para interfaces é como criar regras claras para diferentes partes de 
+  um sistema, mas deixando a implementação dessas regras para cada parte específica. Isso torna mais 
+  fácil construir, consertar ou substituir diferentes partes do sistema, desde que todas sigam as regras 
+  definidas na interface.
+
+
+9 - Você acha que esse princípio deveria ser um dos primeiros em um eventual
+“check-list” de princípios SOLID a aplicarmos?
+
+  R = Em minha opinião particular sim, pois O DIP sugere que é uma boa ideia pensar 
+  sobre como diferentes partes do código dependem uma da outra desde o início. Isso pode 
+  fazer com que o código seja mais fácil de mudar e melhor de se trabalhar ao longo do 
+  tempo. Mesmo que não seja uma regra estrita, é comum dizer que pensar no DIP desde o
+  início de um projeto pode ser muito útil, principalmente quando se pensa na manutenção
+  posterior de determinada aplicação.
+
+10 - Numa visão geral, considera que se começarmos pelos 4 primeiros princípios SOLID, 
+fatalmente o DIP já estaria implementado? 
+
+  R = Não exatamente. Seguir os 4 princípios iniciais SOLID é uma boa prática para fazer o código 
+  mais organizado e fácil de entender. No entanto, isso não significa automaticamente que você 
+  está aplicando outra regra importante chamada Princípio da Inversão de Dependência (DIP). 
+  Para fazer isso, você pode precisar adicionar algumas coisas extras, como usar abstrações 
+  para mudar a forma como partes diferentes do código dependem uma da outra. 
+  Essas abstrações ajudam a criar um código mais flexível e fácil de mudar.
+
+  
+
+
+
+
+
+
+
+
+
